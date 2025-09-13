@@ -5,15 +5,20 @@
  this code is to collect user input
  */
 
-string name = string.Empty;
+string firstName = string.Empty;
+string lastName = string.Empty;
 int age = 0;
 int retirementAge = 65;
 
-Console.WriteLine("Input your name ");
-name = Console.ReadLine();
+Console.Write("Input your first name: ");
+firstName = Console.ReadLine(); 
 
-Console.WriteLine("What is your age: ");
+Console.Write("Input your last name: ");
+lastName = Console.ReadLine();
+
+Console.Write("What is your age: ");
 age = Convert.ToInt32(Console.ReadLine());
 
+Console.WriteLine();
 int workingYearsRemaining = retirementAge - age;
-Console.WriteLine($"Your name is {name} and your Working year remainingi is {workingYearsRemaining}");
+Console.WriteLine($"Your name is {firstName} {lastName} and your Working year remaining is {workingYearsRemaining}");
